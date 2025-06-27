@@ -1,0 +1,34 @@
+{
+  "name": "legacybot-chatbot",
+  "version": "1.0.0",
+  "description": "LegacyBot - Conversational assistant for Legacy Studio Co.",
+  "main": "server.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chatbot",
+    "openai",
+    "assistant",
+    "express",
+    "legacy-studio"
+  ],
+  "author": "Legacy Studio Co.",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "openai": "^4.104.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
