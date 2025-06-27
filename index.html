@@ -378,7 +378,7 @@
         this.apiUrl = 'https://legacy-bot-osdp.onrender.com/api/chat';
         this.webhookUrl = 'https://hook.us2.make.com/l6r3o8pnvlaypoghpw5xpw15xqfq18rm';
         this.threadId = localStorage.getItem('legacybot-thread-id');
-        this.isMinimized = true;
+        this.isMinimized = false;
         this.isTyping = false;
         this.conversationHistory = [];
 
@@ -390,7 +390,7 @@
 
         this.initializeElements();
         this.bindEvents();
-        this.minimizeChat();
+        this.expandChat();
         
         // Add initial bot message to history if not already there
         if (this.conversationHistory.length === 0) {
@@ -592,5 +592,4 @@
   </script>
 </body>
 </html>
-
 
